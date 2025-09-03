@@ -4,6 +4,7 @@ import nltk
 import re
 
 nltk.download('punkt')
+nltk.download('punkt_tab')
 
 st.set_page_config(page_title="Porter Stemmer - All Rules", layout="centered")
 st.title("Porter Stemmer")
@@ -269,3 +270,4 @@ if st.button("Stem Text (All Rules)"):
             # 3. Final stem (highlighted)
             st.markdown(f"**Final Stem:** <span style='color:green; font-weight:bold;'>{final_stem}</span>", unsafe_allow_html=True)
             st.markdown("---")
+
